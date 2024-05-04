@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav className='navbar  bg-gradient-to-l from-black to-[#6d6d6eb3]   p-4 md:p-[5px] flex justify-between items-center fixed text-sm text-white z-10 w-full xs:w-[480px] xs:items-center md:flex-row md:justify-between md:gap-6'>
+    <nav className='navbar  bg-gradient-to-l from-black to-[#6d6d6eb3]   p-4 md:p-[5px] flex justify-between items-center fixed text-sm text-white z-10 w-full   md:flex-row md:justify-between md:gap-6'>
       {/* Logo and Menu */}
       <div className='flex items-center gap-4'>
         <img src={logo} alt="Netflix Logo" className='w-16' />

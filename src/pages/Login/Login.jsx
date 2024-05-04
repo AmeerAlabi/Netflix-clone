@@ -29,15 +29,15 @@ function Login() {
     <div className='login'>
       <img src={logo} alt="" className='w-[150px] xs:w-[75px] ' />
       <div>
-        <form className='w-[400px] bg-black bg-opacity-75  rounded-[4px] pt-[20px] m-auto pb-[15px] mt-3 xs:p-[10px] xs:mt-[2px] '>
+        <form className='w-[400px] bg-black bg-opacity-75  rounded-[4px] pt-[20px] m-auto pb-[15px] mt-3 xs:p-[10px] xs:mt-[2px] xs:w-[300px] '>
           <h2 className="text-[32px] font-semibold mb-[28px] text-white p-2 ml-8">{signState}</h2>
           <div className='flex justify-center flex-col items-center'>
           {signState === "sign Up" && (
-            <input type="text" value={name} onChange={(e) => { setName(e.target.value)}} placeholder='Your Name' className='w-[350px] h-[50px] text-white text-[16px] bg-[#333] rounded-md mt-[5px] outline-none p-2' />
+            <input type="text" value={name} onChange={(e) => { setName(e.target.value)}} placeholder='Your Name' className='w-[350px] xs:w-[200px] h-[50px] text-white text-[16px] bg-[#333] rounded-md mt-[5px] outline-none p-2' />
           )}
-            <input type="email"  value={email} onChange={(e) => {setEmail(e.target.value)}}    placeholder='Email' className='w-[350px] m-auto h-[50px] text-white text-[16px] bg-[#333] rounded-md mt-[20px] outline-none p-2 xs:mt-[10px]' />
-            <input type="password" value={password} onChange={(e) => {setPassword(e.target.value)}} placeholder='Password' className='w-[350px] h-[50px] text-white text-[16px] bg-[#333] rounded-md mt-[20px] outline-none p-2 xs:mt-[10px]' />
-            <button onClick={user_auth} type='submit' className='border-none outline-none px-[16px] h-[45px] bg-[#e50914] text-[16px] mt-[20px] rounded-md text-white cursor-pointer w-[350px]'>
+            <input type="email"  value={email} onChange={(e) => {setEmail(e.target.value)}}    placeholder='Email' className='w-[350px] xs:w-[200px] m-auto h-[50px] text-white text-[16px] bg-[#333] rounded-md mt-[20px] outline-none p-2 xs:mt-[10px]' />
+            <input type="password" value={password} onChange={(e) => {setPassword(e.target.value)}} placeholder='Password' className='w-[350px] xs:w-[200px] h-[50px] text-white text-[16px] bg-[#333] rounded-md mt-[20px] outline-none p-2 xs:mt-[10px]' />
+            <button onClick={user_auth} type='submit' className='border-none outline-none px-[16px] h-[45px] bg-[#e50914] xs:w-[200px] text-[16px] mt-[20px] rounded-md text-white cursor-pointer w-[350px]'>
               {signState}
             </button>
           </div>
